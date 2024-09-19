@@ -1,0 +1,150 @@
+/* General styling */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+    color: #333;
+}
+
+/* Header styling */
+header {
+    background: url('https://source.unsplash.com/1600x400/?news') no-repeat center center/cover;
+    color: white;
+    text-align: center;
+    padding: 80px 20px;
+}
+
+header h1 {
+    font-size: 3rem;
+    font-weight: bold;
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.7);
+    margin: 0;
+}
+
+nav {
+    margin-top: 20px;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+nav ul li {
+    margin: 0 15px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    border-radius: 30px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(0, 0, 0, 0.8);
+}
+
+/* Main content styling */
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 40px 20px;
+}
+
+/* Section styling */
+.news-section {
+    background-color: white;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.news-section h2 {
+    background-color: #007BFF;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    border-bottom: 2px solid #0056b3;
+}
+
+.news-section ul {
+    list-style: none;
+    padding: 20px;
+}
+
+.news-section ul li {
+    margin: 10px 0;
+    display: flex;
+    align-items: center;
+}
+
+.news-section ul li a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.news-section ul li a:hover {
+    color: #0056b3;
+}
+
+/* Placeholder images from Lorem Picsum */
+.news-section ul li img {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border-radius: 50%;
+    object-fit: cover;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* Footer styling */
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    font-size: 1rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    header {
+        padding: 60px 20px;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul li {
+        margin: 0 10px;
+    }
+
+    nav ul li a {
+        font-size: 1rem;
+    }
+
+    main {
+        padding: 20px;
+    }
+
+    .news-section h2 {
+        font-size: 1.5rem;
+    }
+}
